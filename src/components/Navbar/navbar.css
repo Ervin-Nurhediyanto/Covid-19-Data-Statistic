@@ -1,6 +1,15 @@
-.navbar {
-    background-color: #06060ce1 !important;
+nav {
+    min-height: 90vh;
 }
-.navbar-nav {
-    margin-left: 5%;
+
+nav ul {
+    padding-top: 20px;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
