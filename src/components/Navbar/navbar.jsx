@@ -4,7 +4,7 @@ import './navbar.css'
 
 function Navbar () {
   return (
-    <nav className='bg-warning col-2'>
+    <nav className='bg-dark col-2'>
       <ul>
         <li><Link className='link' to='/'>Ringkasan</Link></li>
         <li><Link className='link' to='/statistik'>Statistik</Link></li>
