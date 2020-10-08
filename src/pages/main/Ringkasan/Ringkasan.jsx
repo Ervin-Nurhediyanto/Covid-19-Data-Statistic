@@ -18,9 +18,18 @@ class Home extends Component {
       },
       contries: [],
       isLoading: false,
-      selectCountry: '',
-      tes: 'tes dulu'
+      selectCountry: {
+        NewConfirmed: 0,
+        TotalConfirmed: 0,
+        NewDeaths: 0,
+        TotalDeaths: 0,
+        NewRecovered: 0,
+        TotalRecovered: 0
+      },
+      nameCountry: ''
     }
+    this.handleChange = this.handleChange.bind(this)
+    // this.handleSelectCountry = this.handleSelectCountry.bind(this)
   }
 
   getGlobalStatus () {
@@ -37,19 +46,28 @@ class Home extends Component {
   }
 
   handleChange (e) {
-    console.log(e.target.value)
-    // this.setState({
-    //   selectCountry: e.target.value
-    // })
-    // console.log(this.state.globalStatus)
+    this.setState({
+      nameCountry: e.target.value
+    })
   }
+
+  // handleSelectCountry () {
+  //   this.state.contries.map(function (country, index) {
+  //     if (this.state.nameCountry === country.Country) {
+  //       this.setState({
+  //         selectCountry: country
+  //       })
+  //     }
+  //     return console.log(this.state.selectCountry)
+  //   })
+  // }
 
   componentDidMount () {
     this.getGlobalStatus()
   }
 
   render () {
-    console.log(this.state.contries)
+    // this.handleSelectCountry()
     return (
       <div className='container-flut row bg-dark home'>
         <Navbar />
@@ -100,7 +118,7 @@ class Home extends Component {
             <div className='col-12'>
               <div className='row pl-3'>
                 <select name='country' id='country' onChange={this.handleChange}>
-
+                  <option value=''>- Select Country -</option>
                   {this.state.contries.map(function (country, index) {
                     return (<option key={index} value={country.Country}>{country.Country}</option>)
                   })}
@@ -108,35 +126,45 @@ class Home extends Component {
                 </select>
               </div>
             </div>
-            <div className='col-3'>
-              <CardStatus
-                title='New Confirmed'
-                // data={country.NewConfirmed}
-                // data={this.state.selectCountry.NewConfirmed}
-                color='orange'
-              />
-            </div>
-            <div className='col-3'>
-              <CardStatus
-                title='Total Confirmed'
-                data={this.state.globalStatus.TotalConfirmed}
-                color='blue'
-              />
-            </div>
-            <div className='col-3'>
-              <CardStatus
-                title='Total Deaths'
-                data={this.state.globalStatus.TotalDeaths}
-                color='red'
-              />
-            </div>
-            <div className='col-3'>
-              <CardStatus
-                title='Total Recovered'
-                data={this.state.globalStatus.TotalRecovered}
-                color='green'
-              />
-            </div>
+            {this.state.contries.map(function (country, index) {
+              if (country.Country === this.state.nameCountry) {
+                this.setState({
+                  selectCountry: country
+                })
+              }
+              return (
+                <>
+                  <div className='col-3'>
+                    <CardStatus
+                      title='New Confirmed'
+                      data={this.state.selectCountry.NewConfirmed}
+                      color='orange'
+                    />
+                  </div>
+                  <div className='col-3'>
+                    <CardStatus
+                      title='Total Confirmed'
+                      data={this.state.selectCountry.TotalConfirmed}
+                      color='blue'
+                    />
+                  </div>
+                  <div className='col-3'>
+                    <CardStatus
+                      title='Total Deaths'
+                      data={this.state.selectCountry.TotalDeaths}
+                      color='red'
+                    />
+                  </div>
+                  <div className='col-3'>
+                    <CardStatus
+                      title='Total Recovered'
+                      data={this.state.selectCountry.TotalRecovered}
+                      color='green'
+                    />
+                  </div>
+                </>
+              )
+            })}
 
           </div>
           {/* End Negara */}
