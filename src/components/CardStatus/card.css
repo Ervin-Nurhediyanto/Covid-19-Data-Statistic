@@ -1,0 +1,16 @@
+.card {
+    background-color: #00000050;
+    border: none;
+}
+.blue{
+    color: rgb(15, 15, 253);
+}
+.red{
+    color: rgba(255, 0, 0, 0.952);
+}
+.green{
+    color: rgb(22, 163, 22);
+}
+.orange{
+    color: orangered;
+}
