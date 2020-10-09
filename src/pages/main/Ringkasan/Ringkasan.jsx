@@ -60,6 +60,23 @@ class Home extends Component {
           selectCountry: country
         })
       }
+      if (!e.target.value) {
+        this.setState({
+          selectCountry: {
+            Country: '',
+            CountryCode: '',
+            Slug: '',
+            NewConfirmed: 0,
+            TotalConfirmed: 0,
+            NewDeaths: 0,
+            TotalDeaths: 0,
+            NewRecovered: 0,
+            TotalRecovered: 0,
+            Date: '',
+            Premium: {}
+          }
+        })
+      }
       return console.log('Data Country')
     })
   }
