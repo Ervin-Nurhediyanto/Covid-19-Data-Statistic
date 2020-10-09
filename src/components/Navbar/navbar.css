@@ -8,11 +8,14 @@ nav ul {
 }
 
 nav ul li {
+    background-color: #00000050;
     list-style-type: none;
     font-size: 17px;
     font-weight: bold;
     margin-bottom: 20px;
+    padding: 5px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 nav ul li .link {
@@ -21,4 +24,12 @@ nav ul li .link {
 
 nav ul li .link:hover {
     color: #ff0000;
+}
+
+nav ul li.info {
+    font-size: 15px; 
+}
+
+nav ul li .red{
+    color: rgba(255, 0, 0, 0.952);
 }

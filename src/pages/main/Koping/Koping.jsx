@@ -70,7 +70,7 @@ class Home extends Component {
   render () {
     return (
       <div className='container-flut row bg-dark home'>
-        <Navbar />
+        <Navbar color4='red' />
         <div className='container col-10'>
           {/* Seluruh Dunia */}
           <div className='row pt-3 pr-3'>
