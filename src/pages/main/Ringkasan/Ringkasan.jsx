@@ -134,8 +134,8 @@ class Home extends Component {
           <div className='row pt-3 pr-3'>
             <div className='col-12'>
               <div className='row pl-3'>
-                <select name='country' id='country' onChange={this.handleChange}>
-                  <option value=''>- Select Country -</option>
+                <select name='country' id='country' className='' onChange={this.handleChange}>
+                  <option className='' value=''>- Select Country -</option>
                   {this.state.contries.map(function (country, index) {
                     return (<option key={index} value={country.Country}>{country.Country}</option>)
                   })}

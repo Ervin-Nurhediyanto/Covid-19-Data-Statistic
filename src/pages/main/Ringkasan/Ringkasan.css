@@ -1,0 +1,8 @@
+select {
+    min-width: 250px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+option {
+}
