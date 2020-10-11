@@ -56,7 +56,7 @@ class Home extends Component {
 
   // Handle Change Country
   handleChangeA (e) {
-    axios.get('https://api.covid19api.com/country/' + e.target.value + '/status/confirmed?from=2020-10-01T00:00:00Z&to=2020-10-10T00:00:00Z')
+    axios.get(`https://api.covid19api.com/country/${e.target.value}/status/confirmed?from=2020-10-01T00:00:00Z&to=2020-10-10T00:00:00Z`)
       .then((res) => {
         const data = []
         res.data.map((date) => {
@@ -70,7 +70,7 @@ class Home extends Component {
   }
 
   handleChangeB (e) {
-    axios.get('https://api.covid19api.com/country/' + e.target.value + '/status/confirmed?from=2020-10-01T00:00:00Z&to=2020-10-10T00:00:00Z')
+    axios.get(`https://api.covid19api.com/country/${e.target.value}/status/confirmed?from=2020-10-01T00:00:00Z&to=2020-10-10T00:00:00Z`)
       .then((res) => {
         const data = []
         res.data.map((date) => {
@@ -84,7 +84,7 @@ class Home extends Component {
   }
 
   handleChangeC (e) {
-    axios.get('https://api.covid19api.com/country/' + e.target.value + '/status/confirmed?from=2020-10-01T00:00:00Z&to=2020-10-10T00:00:00Z')
+    axios.get(`https://api.covid19api.com/country/${e.target.value}/status/confirmed?from=2020-10-01T00:00:00Z&to=2020-10-10T00:00:00Z`)
       .then((res) => {
         const data = []
         res.data.map((date) => {
