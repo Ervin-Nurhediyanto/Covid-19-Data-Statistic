@@ -4,7 +4,7 @@ import './Ringkasan.css'
 import Navbar from '../../../components/Navbar/navbar'
 import Globe from '../../../components/Globe/Globe'
 import CardStatus from '../../../components/CardStatus'
-// import CardInfo from '../../../components/CardInfo'
+
 class Home extends Component {
   constructor () {
     super()
