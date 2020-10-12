@@ -9,7 +9,6 @@ export default function LineGraph (props) {
         <Line
           data={{
             labels: props.labels,
-            // labels: [],
             datasets: [
               {
                 label: props.labelA,
@@ -40,11 +39,10 @@ export default function LineGraph (props) {
               }
             ]
           }}
-          // data={props.state}
           options={{
             title: {
               display: true,
-              text: `Data Covid 19 Bulan ${props.month}`,
+              text: `Data Covid 19 Bulan ${props.month} ${props.year}`,
               fontSize: 18
             },
             legend: {

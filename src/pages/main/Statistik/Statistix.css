@@ -1,4 +1,10 @@
 .data-month {
-    height: 200px;
-    width: 200px;
+    height: 165vh;
+    width: 165vh;
+}
+
+.Select-Month {
+    margin-right: 10px;
+    margin-left: 120px;
+    width: 100px;
 }
