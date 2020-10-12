@@ -1,0 +1,17 @@
+article {
+    max-width: 169vh;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.scroll {
+    height: 64vh;
+    width: 167vh;
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
