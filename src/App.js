@@ -8,10 +8,6 @@ import Informasi from './pages/main/Informasi-Kesehatan/Informasi-Kesehatan.jsx'
 import Koping from './pages/main/Koping/Koping.jsx'
 import Berita from './pages/main/Berita/Berita.jsx'
 import Lokasi from './pages/main/Lokasi-Tes/Lokasi-Tes.jsx'
-// import Navbar from './components/Navbar/navbar.jsx'
-// import Home from './pages/main/home/home.jsx'
-import Detail from './pages/main/detail'
-import About from './pages/main/about'
 
 function App () {
   return (
@@ -24,9 +20,6 @@ function App () {
         <Route path='/koping' component={Koping} />
         <Route path='/berita' component={Berita} />
         <Route path='/lokasi-tes' component={Lokasi} />
-        {/* <Route path='/' exact component={Home} /> */}
-        <Route path='/countries/:contries' component={Detail} />
-        <Route path='/about' component={About} />
       </Switch>
     </BrowserRouter>
   )

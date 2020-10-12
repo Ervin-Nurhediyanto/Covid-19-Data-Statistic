@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import './Informasi-Kesehatan.css'
 import Navbar from '../../../components/Navbar/navbar'
 import Gejala from '../../../components/Main/Informasi-Kesehatan/Gejala/Gejala'
+import Pencegahan from '../../../components/Main/Informasi-Kesehatan/Pencegahan/Pencegahan'
 class Home extends Component {
   constructor () {
     super()
@@ -66,12 +67,14 @@ class Home extends Component {
         <div className='container-flut row bg-dark home'>
           <Navbar color3='red' />
           <div className='container col-10 pt-3'>
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center mb-2'>
               <button className='mr-2' onClick={this.handleGejala}>Gejala</button>
               <button className='red mr-2' onClick={this.handlePencegahan}>Pencegahan</button>
               <button className='mr-2' onClick={this.handlePerawatan}>Perawatan</button>
             </div>
-            <h4>Ini Pencegahan</h4>
+            <div className='pt-2'>
+              <Pencegahan />
+            </div>
           </div>
         </div>
       )
@@ -81,7 +84,7 @@ class Home extends Component {
         <div className='container-flut row bg-dark home'>
           <Navbar color3='red' />
           <div className='container col-10 pt-3'>
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center mb-2'>
               <button className='mr-2' onClick={this.handleGejala}>Gejala</button>
               <button className='mr-2' onClick={this.handlePencegahan}>Pencegahan</button>
               <button className='red mr-2' onClick={this.handlePerawatan}>Perawatan</button>
