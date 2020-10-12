@@ -4,6 +4,7 @@ import './Informasi-Kesehatan.css'
 import Navbar from '../../../components/Navbar/navbar'
 import Gejala from '../../../components/Main/Informasi-Kesehatan/Gejala/Gejala'
 import Pencegahan from '../../../components/Main/Informasi-Kesehatan/Pencegahan/Pencegahan'
+import Perawatan from '../../../components/Main/Informasi-Kesehatan/Perawatan/Perawatan'
 class Home extends Component {
   constructor () {
     super()
@@ -89,7 +90,9 @@ class Home extends Component {
               <button className='mr-2' onClick={this.handlePencegahan}>Pencegahan</button>
               <button className='red mr-2' onClick={this.handlePerawatan}>Perawatan</button>
             </div>
-            <h4>Ini Perawatan</h4>
+            <div className='pt-2'>
+              <Perawatan />
+            </div>
           </div>
         </div>
       )
