@@ -1,0 +1,8 @@
+.news-list {
+    height: 87vh;
+    overflow-y: scroll;
+}
+
+.news-list::-webkit-scrollbar {
+    display: none;
+}
