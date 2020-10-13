@@ -1,3 +1,18 @@
 header {
     min-height: 10vh;
 }
+
+header h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header-image {
+    height: 50px;
+    width: 50px;
+}
+
+.header-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
