@@ -137,12 +137,12 @@ export default class Koping extends Component {
           <div className={`${this.state.display}`}>
             <ul>
               <li>{this.state.li01}</li>
-              <li>{this.state.li01}</li>
-              <li>{this.state.li01}</li>
-              <li>{this.state.li01}</li>
-              <li>{this.state.li01}</li>
-              <li>{this.state.li01}</li>
-              <li>{this.state.li01}</li>
+              <li>{this.state.li02}</li>
+              <li>{this.state.li03}</li>
+              <li>{this.state.li04}</li>
+              <li>{this.state.li05}</li>
+              <li>{this.state.li06}</li>
+              <li>{this.state.li07}</li>
             </ul>
             <h5>{this.state.ul02}</h5>
             <ul>
