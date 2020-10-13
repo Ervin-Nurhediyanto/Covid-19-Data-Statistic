@@ -33,3 +33,23 @@ nav ul li.info {
 nav ul li .red{
     color: rgba(255, 0, 0, 0.952);
 }
+
+@media (max-width: 768px) {
+    nav {
+        min-height: 180vh;
+    }
+
+    nav ul {
+        padding: 5px;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        width: 85px;
+        font-size: 15px;
+    }
+
+    nav ul li.info {
+        font-size: 12px; 
+    }
+}

@@ -1,0 +1,41 @@
+.RS-List {
+    height: 180px;
+    padding-right: 14px;
+    overflow-y: scroll;
+}
+
+.RS-List::-webkit-scrollbar {
+    display: none;
+}
+
+.RS {
+    border-radius: 20px;
+    box-shadow: -2px -2px #ffffff73, 4px 4px rgba(94, 104, 121, 0.288);
+    border: none;
+    outline: none;
+    transition: width 1s;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.RS:hover {
+    border-radius: 20px;
+    box-shadow: inset -2px -2px #ffffff73, inset 4px 4px rgba(94, 104, 121, 0.288);
+    border: none;
+}
+
+.RS h4:hover {
+    color: red;
+}
+
+.red {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .RS-List {
+        height: 220px;
+        padding-right: 14px;
+    }
+}
