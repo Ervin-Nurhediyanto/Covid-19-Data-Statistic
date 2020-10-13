@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css'
+import 'font-awesome/css/font-awesome.min.css'
 import Header from './components/Header/Header.jsx'
 import Ringkasan from './pages/main/Ringkasan/Ringkasan.jsx'
 import Statistik from './pages/main/Statistik/Statistik.jsx'

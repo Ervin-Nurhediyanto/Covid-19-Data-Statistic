@@ -1,0 +1,11 @@
+.koping {
+    cursor: pointer;
+}
+
+.koping:hover {
+    color: chartreuse;
+}
+
+.hiden {
+    display: none;
+}
