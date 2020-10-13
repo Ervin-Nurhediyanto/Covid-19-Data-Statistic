@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import './Lokasi-Tes.css'
 import Navbar from '../../../components/Navbar/navbar'
-import Map from '../../../components/Map/Map'
+import Map from '../../../components/Main/Lokasi-Tes/Map/Map'
+// import Map from '../../../components/Map/Map'
 class Home extends Component {
   constructor () {
     super()

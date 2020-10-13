@@ -4,6 +4,9 @@ import './Ringkasan.css'
 import Navbar from '../../../components/Navbar/navbar'
 import Globe from '../../../components/Globe/Globe'
 import CardStatus from '../../../components/CardStatus'
+import Pie from '../../../components/Charts/Pie Charts/Pie/Pie'
+import Doughnut from '../../../components/Charts/Pie Charts/Doughnut/Doughnut'
+import Map from '../../../components/Map/Map'
 
 class Home extends Component {
   constructor () {
@@ -32,7 +35,11 @@ class Home extends Component {
         Date: '',
         Premium: {}
       },
-      nameCountry: ''
+      nameCountry: '',
+      location: {
+        lat: 1,
+        lon: 1
+      }
     }
     this.handleChange = this.handleChange.bind(this)
   }
@@ -58,6 +65,14 @@ class Home extends Component {
       if (country.Country === e.target.value) {
         this.setState({
           selectCountry: country
+        })
+        axios.get('https://api.covid19api.com/dayone/country/' + e.target.value + '/status/confirmed').then((res) => {
+          this.setState({
+            location: {
+              lat: Number(res.data[0].Lat),
+              lon: Number(res.data[0].Lon)
+            }
+          })
         })
       }
       if (!e.target.value) {
@@ -173,6 +188,23 @@ class Home extends Component {
             </div>
           </div>
           {/* End Negara */}
+
+          <div className='row'>
+            <Pie
+              title='Seluruh Dunia'
+              data={[this.state.globalStatus.TotalConfirmed, this.state.globalStatus.TotalDeaths, this.state.globalStatus.TotalRecovered]}
+            />
+            <Doughnut
+              title={this.state.nameCountry}
+              data={[this.state.selectCountry.TotalConfirmed, this.state.selectCountry.TotalDeaths, this.state.selectCountry.TotalRecovered]}
+            />
+          </div>
+          <div className='row'>
+            <Map
+              lat={this.state.location.Lat}
+              lng={this.state.location.Lon}
+            />
+          </div>
 
         </div>
       </div>
