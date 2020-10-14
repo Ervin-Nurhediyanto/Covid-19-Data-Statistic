@@ -1,5 +1,9 @@
 # Covid 19 Data Statistic
 
+<p align='center'>
+  <span>
+      <image width="200" src='./src/assets/Covid-19.png' />
+
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
