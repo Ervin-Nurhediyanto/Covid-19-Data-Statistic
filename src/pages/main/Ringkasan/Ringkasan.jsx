@@ -37,8 +37,8 @@ class Home extends Component {
       },
       nameCountry: '',
       location: {
-        lat: 1,
-        lon: 1
+        lat: -0.79,
+        lon: 113.92
       }
     }
     this.handleChange = this.handleChange.bind(this)
