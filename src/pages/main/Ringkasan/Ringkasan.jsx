@@ -6,7 +6,7 @@ import Globe from '../../../components/Globe/Globe'
 import CardStatus from '../../../components/CardStatus'
 import Pie from '../../../components/Charts/Pie Charts/Pie/Pie'
 import Doughnut from '../../../components/Charts/Pie Charts/Doughnut/Doughnut'
-import Map from '../../../components/Map/Map'
+// import Map from '../../../components/Map/Map'
 
 class Home extends Component {
   constructor () {
@@ -199,12 +199,12 @@ class Home extends Component {
               data={[this.state.selectCountry.TotalConfirmed, this.state.selectCountry.TotalDeaths, this.state.selectCountry.TotalRecovered]}
             />
           </div>
-          <div className='row'>
+          {/* <div className='row'>
             <Map
               lat={this.state.location.Lat}
               lng={this.state.location.Lon}
             />
-          </div>
+          </div> */}
 
         </div>
       </div>
