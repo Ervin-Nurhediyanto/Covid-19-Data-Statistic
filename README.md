@@ -1,68 +1,72 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Covid 19 Data Statistic
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-In the project directory, you can run:
+- [Covid 19 Data Statistic](#covid-19-data-statistic)
+  - [Table of Contents](#table-of-contents)
+  - [About The Project](#about-the-project)
+    - [Built With](#built-with)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Screenshots](#screenshots)
+  - [Demo Project](#demo-project)
+  - [Contact](#contact)
 
-### `yarn start`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Covid-19 statistical data is an application to monitor covid-19 cases in the world.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Built With
 
-### `yarn test`
+* [React.js](https://reactjs.org/)
+* [Bootstrap](https://getbootstrap.com/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- GETTING STARTED -->
+## Getting Started
 
-### `yarn build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [nodejs](https://nodejs.org/en/download/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+``` bash
+# install dependencies
+> npm install
+# serve with hot reload at localhost:3000
+> npm run start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Other commands available are:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+``` bash
+# build for production with minification
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- ROADMAP -->
+## Screenshots
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<p align='center'>
+  <span>
+      <image width="200" src='./src/assets/Screenshot/Ringkasan.png' />
+      <image width="200" src='./src/assets/Screenshot/Statistik.png' />
+      <image width="200" src='./src/assets/Screenshot/Informasi-Kesehatan.png' />
+      <image width="200" src='./src/assets/Screenshot/Berita.png' />
+      <image width="200" src='./src/assets/Screenshot/Koping.png' />
+      <image width="200" src='./src/assets/Screenshot/Lokasi-Tes.png' />
 
-## Learn More
+## Demo Project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Project demo is available at [http://cafein-covid-19.fwdev.online/](http://cafein-covid-19.fwdev.online/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- CONTACT -->
+## Contact
 
-### Code Splitting
+My Email : ervinnurhediyanto@gmail.com
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Project Link: [`Covid-19 Data Statistic`](https://github.com/Ervin-Nurhediyanto/Covid-19-Data-Statistic)
